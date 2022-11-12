@@ -28,6 +28,10 @@ In this folder you will find four files with extension (.mat). The files with th
 In this folder you will find the files responsible for generating all the models found in the folder (File Models). On the one hand, you will find a folder containing all the records of the MIT-BIH arrhythmia database with extension (.csv) together with their annotations (.txt).
 On the other hand, you will find three files (.m), of which the file (Load_Preprocess_Segment_Dataset) is responsible for loading all the database records as well as preprocessing and segmenting the signals. The file (ExtractFeatures_Dataset) is in charge of extracting all the features from the signal segments and finally the file (Training_Evaluation_Classifiers) is in charge of training the feature set using classifiers such as KNN, neural networks and decision trees. In the same way, it is also in charge of evaluating which classifier offers the best performance by applying some metrics recommended by the literature.
 
+3) Folder (GUI)
+
+This folder contains the codes responsible for generating the display interface for the detection and classification of cardiac arrhythmias. 
+
 # Steps (How to run)
 
 1) 
