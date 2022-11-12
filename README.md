@@ -4,14 +4,16 @@ This work presents a system to support the diagnosis of normal and pathological 
 
 # Authors
 Hermes Andrés Ayala Cucas
+
 Edison Alexander Mora Piscal
+
 Dagoberto Mayorca Torres
 
 # Software used
 MATLAB R2021a
 
 # Database used
-MIT-BIH Arrhythmia Database - PhysioBank ATM: (https://physionet.org/cgi-bin/atm/ATM)
+MIT-BIH Arrhythmia Database - PhysioBank ATM: (https://physionet.org/content/mitdb/1.0.0/)
 
 The dataset selected for this study corresponds to the MIT-BIH cardiac arrhythmia database. The database contains two-channel ambulatory ECG records from 47 individuals analyzed by the BIH Arrhythmia Laboratory between 1975 and 1979. Forty-eight half-hour recordings were collected using analog Holter equipment with a sampling rate of 360 Hz and 11-bit resolution over a range of 10 mV. The database includes about 110.000 records, with five classes of arrhythmias: Nonectopic beats (N), Fusion beats (F), Supraventricular ectopic beats (S), Ventricular ectopic beats (V), and Unknown beats (U). Cardiologists performed the classification and annotation of the recordings of each heartbeat. 
 
