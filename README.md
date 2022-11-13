@@ -53,4 +53,15 @@ In this particular case, in this work the three classifiers were evaluated and t
 
 Once the whole methodological process has been executed to observe which training model offers the best performance, we proceed to test and run the graphical interface.
 
+# Section 2 (Interface)
+
+1) Go to the folder (GUI) where you will find several function codes (.m) that perform the process of data reading, preprocessing, peak detection, segmentation, prediction, data visualization and other codes that perform the same methodological process of section 1. 
+2) To start the interface, execute the function code (Inicio.m), this code will open a window in which the ECG diagnostic system is started, the file with extension (csv) to be analyzed must be selected by clicking on the "Select record" button.
+3) Once the file has been selected, the next step is to start the analysis process by clicking on the "Analyze" button.
+4) Subsequently, after analysis, it displays the classification results of the selected recording. The diagrams of the modeling process are shown in the left part; they include the original ECG signal, the filtered signal, the R-peak detection and the signal segmentation. The right part of the window shows the diagnostic results provided by our system; these results include the total number of detected beats and the number of beats classified according to AAMI standards. In addition, the prediction accuracy in the diagnosis of cardiac arrhythmias is shown presenting the reliability in the recognition and detection of this type of pathologies. 
+5) Finally, to select and analyze a new record, repeat the process by pressing the "Back" button.
+
+# Software references: Beat Detection
+ [*Pan Tompkins*] https://la.mathworks.com/matlabcentral/fileexchange/101078-qrs-detection-using-pan-tompkins-algorithm-from-ecg-signal?s_tid=FX_rc1_behav
+ 
 
