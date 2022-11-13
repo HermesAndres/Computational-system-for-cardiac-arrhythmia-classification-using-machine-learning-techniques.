@@ -34,5 +34,23 @@ This folder contains the codes responsible for generating the display interface 
 
 # Steps (How to run)
 
-1) 
+The following three steps of the implemented methodology are optional, however, if you want to know how the methodological process was to determine the best training model to perform the detection and classification of cardiac arrhythmias follow the steps in section 1. Otherwise, just start executing the steps in section 2, where the graphical interface will be executed.
+
+# Section 1 (Methodology)
+1) Loading, preprocessing and segmentation of ECG signals
+
+As a first step, go to the folder (Generate_Learning_model). Once inside the folder, run the code (Load_Preprocess_Segment_Dataset.m). This code will load all the ECG signal records found in the folder (Database_MITBIH). Subsequently, the code will preprocess the ECG signals using digital filters (Butterworth - Savistky Golay) and finally generate the signal segments with a length of 200 samples. Once the code is finished, it will generate a file named (data_w_99_100_max_RR_remove_Savitzky_Golay.mat) which will be saved in the folder (File Models).
+This generated file contains several models including the original ECG signals, filtering, R peak positions and segments of all signals that will be used in the following code.
+
+2) Extract features from ECG signals
+
+In the second step, run the code (ExtractFeatures_Dataset). This code first loads the file (data_w_99_100_max_RR_remove_Savitzky_Golay.mat) located in the folder (File Models). Subsequently, it performs the feature extraction of the signal segments using the discrete Wavelet transform (DWT). Finally, once the features are generated, the code will save a file named (features_remove_Savitzky_Golay_extraction_DWT.mat) in the (File Models) folder that will be used to train the feature set in the following code.
+
+3) Training characteristics and performance evaluation 
+
+In this third step, run the code (Training_Evaluation_Classifiers.m). This code, in particular, is responsible for loading the file with the features (features_remove_Savitzky_Golay_extraction_DWT.mat) that were generated in the previous code. Subsequently, depending on the classifier to be used (KNN, NN or TREE) it will perform the training of the features and evaluate which classifier offers the best performance. Finally, depending on which classifier offers the best performance it will save a file named (classification_Model_nameclasifier.mat) in the folder (Files Models).
+In this particular case, in this work the three classifiers were evaluated and the one with the best performance was the model with the KNN classifier. However, the other two models can be tested and improved.
+
+Once the whole methodological process has been executed to observe which training model offers the best performance, we proceed to test and run the graphical interface.
+
 
