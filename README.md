@@ -1,4 +1,7 @@
 # ECG Diagnostic Support System
+
+[![Alt text](https://img.youtube.com/vi/0oLFmUj-OWE/0.jpg)](https://www.youtube.com/watch?v=0oLFmUj-OWE)
+
 > :warning: This is a continuation of [another project](https://github.com/mondejar/ecg-classification), developed for the Final Project on cardiac arrhythmia classification. 
 
 This work presents a system to support the diagnosis of normal and pathological pulses in ECG recordings, capable of analyzing the characteristics of QRS complexes that greatly help to classify cardiac arrhythmias. In addition, this research uses the Massachusetts Institute of Technology-BIH cardiac arrhythmia database, which has 48 records of different arrhythmias. Likewise, supervised machine learning algorithms and appropriate feature selection are implemented to generate a low computational cost computer system, which allows processing, characterization, classification and visualization of the results. Given its relevance in the clinical setting, its performance is validated using performance measures recommended by the literature.
